@@ -1,0 +1,24 @@
+@import url(style/header.css);
+@import url(style/main.css);
+@import url(style/sobre.css);
+@import url(style/produtos.css);
+:root {
+  --branco: #ffffff;
+
+  --cor-fundo: #f0d0cd;
+  --cor-secudaria: #000000;
+  --cor-terciaria: #453b40;
+  --cor-hover: #ffcfcf;
+  --cor-1: #f6e1df;
+  --cor-2: #f0d0cd;
+  --cor-3: #e1e7dc;
+  --cor-titulo: #6db476;
+  --font-princial: "Open Sans", sans-serif;
+  --font-titulo: "Bree Serif", serif;
+}
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--font-princial);
+  font-size: 16px;
+  font-weight: 400;
+}
