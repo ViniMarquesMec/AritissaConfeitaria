@@ -57,3 +57,39 @@ hr {
   height: 1px;
   background-color: var(--cor-titulo);
 }
+
+.swiper {
+  width: 100%; /* O carrossel vai ocupar toda a largura do container */
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  font-size: 18px; /* Tamanho da fonte (caso tenha texto) */
+  display: flex; /* Usando flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.swiper-slide img {
+  width: auto; /* largura automática */
+  max-width: 100%; /* nunca ultrapassar o tamanho do slide */
+  height: 250px; /* altura fixa para os slides */
+  object-fit: cover; /* cobre o espaço sem distorcer */
+  border-radius: 10px; /* bordas arredondadas (opcional, para ficar bonito) */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: initial;
+  margin: 0.5em 0;
+}
+.blackgrand-carrosel {
+  padding: 30px;
+
+  background-color: var(--cor-fundo-carrosel);
+  border-radius: 25%;
+}

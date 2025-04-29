@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="style/image/logo2.png">
 
-    <title>Document</title>
+    <title>Aritissa Confeitaria</title>
   </head>
   <body>
     <header class="cabecalho">
@@ -46,32 +51,60 @@
             irresistível da nossa confeitaria!</strong
           >
             </h1>
-            <p class="apresentacao__conteudo__texto">Descubra sobremesas artesanais feitas com ingredientes selecionados e
+      
+
+            <div>
+
+            </div>
+            <div class="carrosel"></div>
+            <p class="apresentacao__conteudo__texto carrosel__titulo">Descubra sobremesas artesanais feitas com ingredientes selecionados e
                 muito carinho. Cada fatia é uma explosão de sabor, perfeita para
                 adoçar momentos especiais ou simplesmente tornar seu dia mais feliz.</p>
-      
-                  
-                <img 
-                id="slide"
-                src="style/image/bolo2.webp" alt="" class="apresentacao__image">
-                <ul class="apresentacao__box">
-                  <li class="apresentacao__box__lista">
-                    <a href="https://www.instagram.com/aritissa_confeitaria/" class="apresentacao__box__link"> <img src="style/image/instagram24.png" alt="Icone instagram" class="apresentacao__box__image">Instagram</a>
-                    
-                  </li>
-                  <li class="apresentacao__box__lista">
-                    <a href="https://wa.me/message/WDK6Z5FNEKVVO1" class="apresentacao__box__link" > <img src="style/image/whatsapp-logo-24.png" alt="Icone WhatsApp" class="apresentacao__box__image">WhatsApp</a>
-                    
-                  </li>
-                </ul>
-               
-                
-        </section>
-        <hr class="traco">
-        <section id="sobreMim" class="sobre">
-          <div class="sobre__conteudo">
-            
-            <h2 class="sobre__titulo">Sobre Mim</h2>
+              
+                  <div class="blackgrand-carrosel">
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                      
+                      
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+ <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img class="image-carrosel" src="style/image/torta.webp" alt=""></div>
+    <div class="swiper-slide"> <img class="image-carrosel" src="style/image/bolo3.webp" alt=""></div>
+    <div class="swiper-slide"> <img class="image-carrosel" src="style/image/bolo2.webp" alt=""></div>
+    <div class="swiper-slide"> <img class="image-carrosel" src="style/image/bolo1.webp" alt=""></div>
+    <div class="swiper-slide"> <img class="image-carrosel" src="style/image/boloSalgada.webp" alt=""></div>
+    
+  </div>
+  
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  
+  
+</div>
+</div>
+<ul class="apresentacao__box">
+  <li class="apresentacao__box__lista">
+    <a href="https://www.instagram.com/aritissa_confeitaria/" class="apresentacao__box__link"> <img src="style/image/instagram24.png" alt="Icone instagram" class="apresentacao__box__image">Instagram</a>
+    
+  </li>
+  <li class="apresentacao__box__lista">
+    <a href="https://wa.me/message/WDK6Z5FNEKVVO1" class="apresentacao__box__link" > <img src="style/image/whatsapp-logo-24.png" alt="Icone WhatsApp" class="apresentacao__box__image">WhatsApp</a>
+    
+  </li>
+</ul>
+
+
+</section>
+<hr class="traco">
+<section id="sobreMim" class="sobre">
+  <div class="sobre__conteudo">
+    
+    <h2 class="sobre__titulo">Sobre Mim</h2>
             <p class="sobre__texto">Apaixonada por confeitaria, transformo ingredientes simples em doces incríveis, cheios de sabor e encanto. Cada bolo, torta ou docinho é feito com dedicação e criatividade, perfeito para tornar seus momentos especiais ainda mais doces e inesquecíveis. Porque cada doce conta uma história de amor e carinho!</p>
             <img src="style/image/fotoPerfil.jpg" alt="Foto de pérfil da Aritisa" class="sobre__image">
           </div>
@@ -344,6 +377,26 @@
     
     <footer></footer>
  
-   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    
+      const swiper = new Swiper('.swiper', {
+
+  slidesPerView: 'auto', /* Cada slide se ajusta automaticamente */
+  spaceBetween: 20, /* Espaço de 20px entre cada slide */
+  centeredSlides: true, /* Centraliza o slide ativo */
+  loop: true, /* Faz o carrossel ficar infinito */
+  autoplay: {                 // 
+    delay: 2500,              
+    disableOnInteraction: false, 
+  pagination:{
+    el:'.swiper-pagination',
+    type:'bullets',
+    
+  },
+}});
+      
+    </script>
   </body>
 </html>
