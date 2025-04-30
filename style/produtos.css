@@ -13,27 +13,31 @@
 
 .produtos__tituto {
   margin: 1em;
-  font-size: 20px;
+  font-size: 30px;
   font-family: var(--font-titulo);
+  color: var(--cor-texto-verde);
+  font-weight: 600;
 }
 .produtos__descricao {
-  color: var(--cor-titulo);
+  color: var(--cor-texto-verde);
   font-size: 20px;
   font-weight: bold;
   margin: 1em;
 }
 .produtos__titulo2 {
   margin: 1em 0 0 0;
+  color: var(--cor-texto-verde);
+  font-weight: 600;
 }
 .produtos__texto {
   font-size: 12px;
   font-weight: bold;
-  color: var(--cor-terciaria);
+  color: var(--cor-texto-verde);
   margin: 10px;
 }
 
 .borda {
-  border: 1px solid var(--cor-titulo);
+  border: 2px solid black;
   margin: 1em 7em 0.25em 7em;
   border-radius: 25px;
   text-align: center;
@@ -41,9 +45,12 @@
   background-color: var(--branco);
   font-family: var(--font-princial);
 }
-.botao__texto {
+.botao__texto-dentro {
   font-family: var(--font-titulo);
+  font-size: 12px;
+  font-weight: 500;
 }
+
 .apresentacao__image {
   border-radius: 25px;
   width: 160px;

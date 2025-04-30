@@ -13,12 +13,15 @@
   --cor-1: #f6e1df;
   --cor-2: #f0d0cd;
   --cor-3: #f0d0cd;
-  --cor-titulo: #6db476;
+ 
   --font-princial: "Open Sans", sans-serif;
   --font-titulo: "Bree Serif", serif;
+  --cor-texto-verde: #2c4a3e;
+  --cor-fundo-botão: #cde3c0;
 }
 body {
-  background-color: var(--cor-fundo);
+  background: linear-gradient(to bottom, #da8b8b, #fbe4dc);
+
   font-family: var(--font-princial);
   font-size: 16px;
   font-weight: 400;

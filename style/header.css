@@ -15,7 +15,7 @@
   padding: 0 1em;
 }
 .cabecalho__image {
-  width: 150px;
+  width: 200px;
   height: auto;
   padding: 0 80px 0 0;
 }
@@ -34,15 +34,17 @@
   position: absolute;
   top: 100%;
   width: 60vw;
+  border-radius: 50%;
 }
 .lista-menu__titulo,
 .lista-menu__item {
   padding: 1em;
-  background-color: var(--cor-titulo);
+  background-color: var(--cor-fundo-botão);
 }
 .lista-menu__titulo {
-  color: var(--cor-fundo);
+  color: var(--cor-texto-verde);
   font-weight: 700;
+  font-size: 20px;
 }
 .lista-menu__link {
   background: var(--cor-secudaria);
@@ -51,4 +53,5 @@
   background-clip: text;
   text-transform: uppercase;
   font-family: var(--fonte-principal);
+  color: var(--cor-texto-verde);
 }
